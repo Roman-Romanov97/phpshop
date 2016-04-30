@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+		<link rel="icon" type="image/png" href="/template/images/logo.png" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -71,6 +72,7 @@
                                         </li>
                                         <?php if (User::isGuest()): ?>                                        
                                             <li><a href="/user/login/"><i class="fa fa-lock"></i> Вход</a></li>
+                                            <li><a href="/user/register/"><i class="fa fa-lock"></i> Регистрация</a></li>
                                         <?php else: ?>
                                             <li><a href="/cabinet/"><i class="fa fa-user"></i> Аккаунт</a></li>
                                             <li><a href="/user/logout/"><i class="fa fa-unlock"></i> Выход</a></li>
