@@ -47,7 +47,7 @@ class Router
         foreach ($this->routes as $uriPattern => $path) {
 
             // Сравниваем $uriPattern и $uri
-            if (preg_match("~$uriPattern~", $uri)) {
+            if (preg_match("/^$uriPattern$/", $uri)) {
 
                 // Получаем внутренний путь из внешнего согласно правилу.
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
